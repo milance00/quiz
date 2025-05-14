@@ -1,0 +1,77 @@
+#btnContainer {
+  width: 60%;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+#loginBtn,
+#signupBtn,
+#userBtn,
+#bookBtn {
+  border: 0;
+  height: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+#loginBtn,
+#userBtn {
+  border-radius: 10px 0px 0px 10px;
+}
+#signupBtn,
+#bookBtn {
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#signupForm {
+  display: none;
+}
+h1 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+h2 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+label {
+  color: white;
+}
+form {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formElement {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.formElement input {
+  padding-left: 15px;
+  min-width: 60%;
+  height: 50px;
+  border: 0;
+  border-radius: 5px;
+}
+form button {
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+}

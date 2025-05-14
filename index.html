@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style_login_page.css" />
+  </head>
+  <body>
+    <div id="navbar">
+      <h1>Quiz</h1>
+      <div id="navbarMenu">
+        
+      </div>
+    </div>
+    <div id="mainContainer">
+      <div id="container">
+        <h1>WELCOME</h1>
+        <div id="btnContainer">
+            <div id="loginBtn">Log in</div>
+            <div id="signupBtn">Sign up</div>
+        </div>
+        <form id="loginForm" action="auth/login.php" method="POST">
+            <span class="formElement">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" required />
+        </span>
+        
+        <span class="formElement">
+        <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </span>
+        </br>
+          <button type="submit">Log in</button>
+        </form>
+        <form id="signupForm" action="auth/signup.php" method="POST">
+            <span class="formElement">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Email" required />
+            </span>
+            <span class="formElement">
+            <label for="username">Username:</label>
+            <input type="text" name="username" placeholder="Username" required />
+        </span>
+        <span class="formElement">
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" placeholder="Firstname" required />
+        </span>
+        <span class="formElement">
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" placeholder="Lastname" required />
+        </span>
+        <span class="formElement">
+        <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </span>
+        </br>
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <div id="footer">Copyright &copy 2025 - Milan Popovic ITS 13/23</div>
+    <script src="js/script_login_page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+#gameBoxContainer {
+  height: 90%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: none;
+}
+#gameBoxContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.gameBox {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(66, 101, 216);
+  border-radius: 20px;
+  border: 3px solid rgb(66, 91, 216);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gameBox:hover {
+  background-color: rgba(66, 101, 216, 0.9);
+  border: 3px solid rgb(66, 91, 216, 0);
+}
+.gameBox span:first-child {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+.gameBox span:not(:first-child) {
+  margin-bottom: 5px;
+}
+#paginationBox {
+  margin-top: 10px;
+  font-size: 20px;
+}
+#paginationBox a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+@media (max-width: 1820px) {
+  #gameBoxContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1360px) {
+  #gameBoxContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 910px) {
+  #gameBoxContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 460px) {
+  #gameBoxContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gameBox {
+    height: 150px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  #gameBoxContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gameBox {
+    height: 150px;
+    width: 250px;
+  }
+}

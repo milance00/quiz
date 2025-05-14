@@ -1,0 +1,92 @@
+#scoreContainer {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(66, 101, 216);
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+#quizSideBar {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+  margin-right: 5px;
+  overflow: auto;
+  scrollbar-width: none;
+  border: 5px solid white;
+}
+#quizSideBar::-webkit-scrollbar {
+  display: none;
+}
+#scoreBox {
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.quizBox {
+  height: 20%;
+  width: 100%;
+  background-color: rgb(66, 101, 216);
+  border-radius: 15px;
+  margin-bottom: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quizBox:hover {
+  background-color: rgba(66, 101, 216, 0.9);
+}
+.quizBox span:first-child {
+  font-size: 22px;
+  font-weight: bold;
+}
+#scoreBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  scrollbar-width: none;
+}
+#scoreBox::-webkit-scrollbar {
+  display: none;
+}
+#scoreBox h1 {
+  background-color: rgba(66, 101, 216);
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-top: 5px solid white;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+.scoresTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scoresTable th,
+.scoresTable td {
+  border: 5px solid white;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(66, 101, 216);
+  border-radius: 15px;
+  color: white;
+}
+
+.scoresTable th {
+  font-weight: bold;
+  font-size: 22px;
+}
+.scoresTable td {
+  font-size: 18px;
+}
